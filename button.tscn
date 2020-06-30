@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://button.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 388.056
+margin_top = 211.675
+margin_right = 606.056
+margin_bottom = 351.675
+text = "Press"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 387.96
+margin_top = 65.7977
+margin_right = 593.96
+margin_bottom = 167.798
+align = 1
+valign = 1
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
